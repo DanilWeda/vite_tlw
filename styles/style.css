@@ -42,7 +42,6 @@ h1 {
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -102,4 +101,8 @@ button:focus-visible {
 .apc {
   color: blue;
   background-color: red;
+}
+
+.button {
+   @apply py-2 bg-primary;
 }
