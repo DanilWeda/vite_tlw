@@ -19,6 +19,7 @@ export default {
         "color-black": "#000000",
         primary: "#FFF3E3",
         secondary: "#cc9933",
+        grey: "#666666",
       },
     },
   },
