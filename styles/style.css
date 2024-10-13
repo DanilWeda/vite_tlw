@@ -77,22 +77,13 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
-  }
+  
   button {
     background-color: #f9f9f9;
   }
@@ -104,5 +95,29 @@ button:focus-visible {
 }
 
 .button {
-   @apply py-3 px-3 bg-secondary text-white uppercase;
+  @apply py-4 px-4 rounded-[5px] bg-secondary text-white uppercase;
+}
+
+.swiper {
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 200ms linear;
+  transform: scale(0.8) !important;
+}
+
+.swiper-slide-next {
+  transform: scale(0.9) !important;
+}
+
+.swiper-slide-prev {
+  transform: scale(0.9) !important;
+}
+
+.swiper-slide-active {
+  transform: scale(1) !important;
 }

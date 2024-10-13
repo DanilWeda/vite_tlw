@@ -1,9 +1,18 @@
-export function setupCounter(element) {
-  let counter = 1;
-  const setCounter = (count) => {
-    counter = count;
-    element.innerHTML = `count is ${counter}`;
+export function setupCounter(htmlElement) {
+  const state = {
+    counter: 0,
   };
-  element.addEventListener("click", () => setCounter(counter + 1));
-  setCounter(0);
+
+  const INITIAL_VALUE = 0;
+
+  const setCounter = (count) => {
+    state.counter = count;
+    htmlElement.innerHTML = `count is ${state.counter}`;
+  };
+
+  const handleChangeCount = () => setCounter(state.counter + 1);
+
+  htmlElement.addEventListener("click", handleChangeCount);
+
+  setCounter(INITIAL_VALUE);
 }
