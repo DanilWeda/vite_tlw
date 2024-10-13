@@ -28,6 +28,7 @@
     ]
   },
   "dependencies": {
-    "swiper": "^11.1.14"
+    "swiper": "^11.1.14",
+    "tailwind-hamburgers": "^1.3.5"
   }
 }

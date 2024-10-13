@@ -4,15 +4,136 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>New Dekor</title>
   </head>
   <body>
+    <div class="js-burger-menu hidden fixed w-[100vw] h-[100vh] bg-white">
+      >
+      <div class="flex items-center gap-[10px]">
+        <img
+          src="./assets/svg/logo.svg"
+          class="w-[192px] h-[64px]"
+          alt="logo"
+        />
+      </div>
+
+      <nav class="flex justify-center w-[100%] mt-[80px]">
+        <ul class="flex flex-col text-center gap-[40px] font-medium">
+          <li class="hover:cursor-pointer text-black">
+            <a class="hover:text-secondary/[0.8] text-black" href="#home"
+              >Головна</a
+            >
+          </li>
+          <li class="hover:cursor-pointer text-black">
+            <a class="hover:text-secondary/[0.8] text-black" href="#services"
+              >Послуги</a
+            >
+          </li>
+          <li class="hover:cursor-pointer text-black">
+            <a class="hover:text-secondary/[0.8] text-black" href="#our-works"
+              >Наші роботи</a
+            >
+          </li>
+          <li class="hover:cursor-pointer text-black">
+            <a class="hover:text-secondary/[0.8] text-black" href="#about-us"
+              >Про нас</a
+            >
+          </li>
+          <li class="hover:cursor-pointer text-black">
+            <a class="hover:text-secondary/[0.8] text-black" href="#contacts"
+              >Контакти</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="flex flex-col items-center pt-[20px] w-[100%]">
+        <div class="w-[100%] flex flex-col items-start">
+          <a
+            href="#contacts"
+            class="self-center mb-[20%] button hover:text-primary font-bold text-center w-[100%] max-w-[250px] text-base laptop:mt-[40px] phone:mt-[10px]"
+          >
+            Зробити замовлення
+          </a>
+
+          <div class="flex gap-[20px] pl-[80px]">
+            <svg
+              width="22"
+              height="28"
+              viewBox="0 0 22 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 0C8.08369 0.0033903 5.28779 1.1465 3.22564 3.17859C1.16348 5.21067 0.00345217 7.96579 1.17029e-05 10.8396C-0.00348119 13.1881 0.774992 15.4728 2.21601 17.3433C2.21601 17.3433 2.51601 17.7326 2.56501 17.7887L11 27.5917L19.439 17.7838C19.483 17.7316 19.784 17.3433 19.784 17.3433L19.785 17.3404C21.2253 15.4707 22.0034 13.187 22 10.8396C21.9966 7.96579 20.8365 5.21067 18.7744 3.17859C16.7122 1.1465 13.9163 0.0033903 11 0ZM11 14.7813C10.2089 14.7813 9.43553 14.5501 8.77773 14.117C8.11993 13.6838 7.60724 13.0682 7.30449 12.348C7.00174 11.6277 6.92253 10.8352 7.07687 10.0706C7.23121 9.30599 7.61217 8.60366 8.17158 8.0524C8.73099 7.50115 9.44373 7.12574 10.2197 6.97365C10.9956 6.82156 11.7998 6.89962 12.5307 7.19796C13.2616 7.49629 13.8864 8.00151 14.3259 8.64971C14.7654 9.29792 15 10.06 15 10.8396C14.9987 11.8846 14.5768 12.8864 13.827 13.6253C13.0771 14.3642 12.0605 14.7799 11 14.7813Z"
+                fill="#B88E2F"
+              />
+            </svg>
+
+            <div class="text-neutral">вул. Антоновича, 125, Київ</div>
+          </div>
+
+          <div class="flex mt-[40px] pl-[80px]">
+            <svg
+              width="23"
+              height="23"
+              viewBox="0 0 23 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.2575 17.4099L17.1552 12.8836C16.914 12.6697 16.5971 12.5556 16.2713 12.5654C15.9456 12.5753 15.6365 12.7082 15.4093 12.9362L12.4057 15.9501C11.6827 15.8154 10.2292 15.3733 8.73303 13.9172C7.23687 12.4562 6.78375 11.0344 6.64945 10.3339L9.73591 7.40206C9.96989 7.18055 10.1064 6.87891 10.1164 6.56098C10.1265 6.24304 10.0094 5.93376 9.78988 5.69858L5.15203 0.721619C4.93243 0.485699 4.62722 0.342597 4.30122 0.322703C3.97522 0.302809 3.65411 0.407691 3.40609 0.615075L0.682378 2.89414C0.465373 3.10663 0.33585 3.38945 0.318379 3.68893C0.299551 3.99509 -0.0594267 11.2474 5.70431 16.8735C10.7325 21.7782 17.031 22.137 18.7656 22.137C19.0191 22.137 19.1748 22.1296 19.2162 22.1272C19.5231 22.1104 19.8128 21.9835 20.0295 21.7708L22.3642 19.1121C22.5776 18.8709 22.6858 18.5578 22.6659 18.2398C22.646 17.9217 22.4994 17.6239 22.2575 17.4099Z"
+                fill="#B88E2F"
+              />
+            </svg>
+            <div class="flex flex-col gap-[10px] ml-[20px]">
+              <a
+                href="tel:0636100913"
+                class="hover:text-secondary/[0.8] text-neutral"
+                >+38 (063) 610-09-13</a
+              >
+              <a
+                href="tel:0964523333"
+                class="hover:text-secondary/[0.8] text-neutral"
+                >+38 (096) 452-33-33</a
+              >
+            </div>
+          </div>
+
+          <div class="flex mt-[40px] pl-[80px]">
+            <svg
+              width="31"
+              height="30"
+              viewBox="0 0 31 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.4007 5.47242C23.0432 5.47242 22.6938 5.57585 22.3965 5.76962C22.0993 5.9634 21.8676 6.23882 21.7308 6.56105C21.594 6.88329 21.5582 7.23787 21.628 7.57995C21.6977 7.92203 21.8699 8.23626 22.1226 8.48289C22.3754 8.72951 22.6975 8.89747 23.0481 8.96551C23.3987 9.03356 23.7621 8.99864 24.0924 8.86516C24.4226 8.73169 24.7049 8.50566 24.9035 8.21565C25.1021 7.92565 25.2081 7.58469 25.2081 7.23591C25.2081 6.7682 25.0177 6.31965 24.6787 5.98894C24.3398 5.65822 23.88 5.47242 23.4007 5.47242ZM30.3292 9.02879C30.2999 7.80948 30.0659 6.60312 29.6364 5.45773C29.2534 4.47771 28.6573 3.59031 27.8892 2.85658C27.1433 2.10331 26.2317 1.5254 25.2232 1.16657C24.0523 0.734751 22.8145 0.501161 21.5631 0.47587C19.9665 0.387695 19.4544 0.387695 15.3576 0.387695C11.2607 0.387695 10.7486 0.387695 9.152 0.47587C7.90058 0.501161 6.66277 0.734751 5.49193 1.16657C4.4853 1.52904 3.57444 2.10645 2.82595 2.85658C2.05391 3.58428 1.4616 4.47376 1.09382 5.45773C0.651238 6.60009 0.411826 7.8078 0.385904 9.02879C0.295532 10.5865 0.295532 11.0862 0.295532 15.0834C0.295532 19.0807 0.295532 19.5803 0.385904 21.1381C0.411826 22.3591 0.651238 23.5668 1.09382 24.7091C1.4616 25.6931 2.05391 26.5826 2.82595 27.3103C3.57444 28.0604 4.4853 28.6378 5.49193 29.0003C6.66277 29.4321 7.90058 29.6657 9.152 29.691C10.7486 29.7792 11.2607 29.7792 15.3576 29.7792C19.4544 29.7792 19.9665 29.7792 21.5631 29.691C22.8145 29.6657 24.0523 29.4321 25.2232 29.0003C26.2317 28.6415 27.1433 28.0636 27.8892 27.3103C28.6607 26.5793 29.2573 25.6911 29.6364 24.7091C30.0659 23.5638 30.2999 22.3574 30.3292 21.1381C30.3292 19.5803 30.4196 19.0807 30.4196 15.0834C30.4196 11.0862 30.4196 10.5865 30.3292 9.02879ZM27.618 20.9617C27.6071 21.8946 27.4339 22.8188 27.1059 23.6951C26.8654 24.3347 26.4792 24.9126 25.9763 25.3851C25.4877 25.8709 24.8967 26.247 24.2442 26.4873C23.346 26.8073 22.3987 26.9763 21.4426 26.987C19.9364 27.0605 19.3791 27.0752 15.4178 27.0752C11.4565 27.0752 10.8992 27.0752 9.393 26.987C8.40024 27.0051 7.41173 26.856 6.47096 26.5461C5.84707 26.2935 5.28311 25.9183 4.81414 25.4439C4.31421 24.9718 3.93278 24.3935 3.69955 23.7539C3.33182 22.8651 3.12786 21.9198 3.09707 20.9617C3.09707 19.4922 3.0067 18.9484 3.0067 15.0834C3.0067 11.2185 3.0067 10.6747 3.09707 9.20514C3.10382 8.25147 3.28226 7.30637 3.62424 6.41295C3.8894 5.79266 4.29641 5.23973 4.81414 4.79642C5.27174 4.29113 5.83729 3.88983 6.47096 3.62076C7.38907 3.29752 8.35673 3.12857 9.33275 3.1211C10.839 3.1211 11.3962 3.03293 15.3576 3.03293C19.3189 3.03293 19.8762 3.03293 21.3824 3.1211C22.3385 3.1318 23.2858 3.30075 24.1839 3.62076C24.8684 3.86861 25.4827 4.27155 25.9763 4.79642C26.4699 5.24784 26.8556 5.79974 27.1059 6.41295C27.4407 7.30782 27.614 8.25253 27.618 9.20514C27.6934 10.6747 27.7084 11.2185 27.7084 15.0834C27.7084 18.9484 27.6934 19.4922 27.618 20.9617ZM15.3576 7.54452C13.83 7.54743 12.3376 7.99204 11.0689 8.82219C9.80019 9.65235 8.81217 10.8308 8.22966 12.2086C7.64714 13.5864 7.49627 15.1018 7.79611 16.5632C8.09595 18.0246 8.83304 19.3666 9.91426 20.4194C10.9955 21.4723 12.3723 22.1888 13.8707 22.4785C15.3692 22.7683 16.922 22.6181 18.333 22.0471C19.744 21.476 20.9499 20.5097 21.7983 19.2703C22.6466 18.0309 23.0994 16.5739 23.0994 15.0834C23.1014 14.0916 22.9024 13.1092 22.5139 12.1927C22.1253 11.2762 21.5549 10.4437 20.8354 9.74308C20.1159 9.04245 19.2616 8.48751 18.3215 8.1102C17.3814 7.73289 16.3741 7.54064 15.3576 7.54452ZM15.3576 19.9771C14.3656 19.9771 13.3958 19.6901 12.571 19.1524C11.7462 18.6147 11.1033 17.8504 10.7237 16.9562C10.3441 16.062 10.2447 15.078 10.4383 14.1287C10.6318 13.1794 11.1095 12.3075 11.811 11.6231C12.5124 10.9387 13.4061 10.4726 14.3791 10.2838C15.352 10.095 16.3605 10.1919 17.277 10.5623C18.1935 10.9327 18.9768 11.5599 19.5279 12.3647C20.0791 13.1694 20.3732 14.1156 20.3732 15.0834C20.3732 15.7261 20.2435 16.3624 19.9914 16.9562C19.7394 17.5499 19.3699 18.0894 18.9042 18.5438C18.4384 18.9982 17.8855 19.3587 17.277 19.6046C16.6684 19.8505 16.0162 19.9771 15.3576 19.9771Z"
+                fill="#B88E2F"
+              />
+            </svg>
+            <div class="flex flex-col gap-[10px] ml-[20px]">
+              <a
+                href="https://www.instagram.com/_newdekor"
+                class="hover:text-secondary/[0.8] text-neutral"
+              >
+                @_newdecor
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <section
       id="app"
       class="w-[100%] bg-[url('/assets/bg/hero-section.jpg')] !max-w-none bg-cover bg-no-repeat h-[100vh] p-[0px]"
     >
       <header class="bg-white">
-        <div class="container flex justify-between items-center py-[20px]">
+        <div
+          class="container laptop:max-w-screen-desktop phone:max-w-full flex justify-between items-center py-[20px]"
+        >
           <div class="flex items-center gap-[10px]">
             <img
               src="./assets/svg/logo.svg"
@@ -20,7 +141,14 @@
               alt="logo"
             />
           </div>
-          <nav>
+
+          <div class="laptop:hidden tham tham-e-squeeze tham-w-6 mr-[25px]">
+            <div class="tham-box">
+              <div class="tham-inner"></div>
+            </div>
+          </div>
+
+          <nav class="laptop:block phone:hidden">
             <ul class="flex gap-[40px] font-medium">
               <li class="hover:cursor-pointer text-black">
                 <a class="hover:text-secondary/[0.8] text-black" href="#home"
@@ -193,13 +321,13 @@
     </section>
 
     <section id="our-works" class="bg-primary pb-[40px]">
-      <div class="container mt-10 mb-10">
+      <div class="container phone:max-w-none mt-10 mb-10">
         <h2 class="text-black text-xxl text-center pt-[40px] font-bold mb-8">
           Наші роботи
         </h2>
 
         <div class="relative">
-          <div class="swiper js-works-slider">
+          <div class="swiper js-works-slider phone:w-[100%]">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img
@@ -267,9 +395,13 @@
         <h2 class="text-black text-xxl text-center pt-[40px] font-bold mb-8">
           Про нас
         </h2>
-        <div class="flex items-center m-auto justify-around w-[100%]">
+        <div
+          class="flex laptop:flex-row phone:flex-col items-center justify-around w-[100%]"
+        >
           <img src="./assets/images/about-us.png" alt="about-us" />
-          <div class="text-black p-[40px] bg-primary w-[45%]">
+          <div
+            class="text-black p-[40px] bg-primary laptop:w-[45%] phone:mt-[40px] phone:w-[100%]"
+          >
             <h6 class="font-bold text-xl mb-[20px]">
               Дарʼя та Тетяна – наші чарівниці декору!
             </h6>
@@ -297,8 +429,12 @@
         >
           Чому обирають нас?
         </h2>
-        <div class="flex text-black w-[100%] justify-around">
-          <div class="flex flex-col max-w-[385px]">
+        <div
+          class="flex text-black w-[100%] justify-around laptop:flex-row phone:flex-col"
+        >
+          <div
+            class="flex flex-col max-w-[385px] laptop:mb-[0px] phone:mb-[25px]"
+          >
             <div
               class="flex gap-[10px] mb-[20px] items-center font-bold text-lg"
             >
@@ -337,7 +473,9 @@
             </p>
           </div>
 
-          <div class="flex text-black max-w-[385px]">
+          <div
+            class="flex text-black max-w-[385px] laptop:mb-[0px] phone:mb-[25px]"
+          >
             <div class="flex flex-col">
               <div
                 class="flex gap-[10px] mb-[20px] items-center font-bold text-lg"
@@ -378,7 +516,9 @@
             </div>
           </div>
 
-          <div class="flex text-black max-w-[385px]">
+          <div
+            class="flex text-black max-w-[385px] laptop:mb-[0px] phone:mb-[25px]"
+          >
             <div class="flex flex-col">
               <div
                 class="flex gap-[10px] mb-[20px] items-center font-bold text-lg"
@@ -431,7 +571,9 @@
           Контакти
         </h2>
         <div class="flex justify-around items-center mb-[20px]">
-          <div class="flex w-[100%] max-w-[400px] flex-col">
+          <div
+            class="flex w-[100%] max-w-[400px] flex-col laptop:flex phone:hidden"
+          >
             <div class="flex flex-col gap-[10px]">
               <div class="flex items-end gap-[10px]">
                 <svg
@@ -467,7 +609,7 @@
                     fill="#B88E2F"
                   />
                 </svg>
-                <p class="text-lg text-secondary font-bold">Наша адреса:</p>
+                <p class="text-lg text-secondary font-bold">Номер</p>
               </div>
               <div class="flex flex-col gap-[10px] ml-[32px]">
                 <a
@@ -524,8 +666,10 @@
     </section>
 
     <footer id="about-us">
-      <div class="container flex justify-between pb-[40px]">
-        <div class="flex w-[100%]">
+      <div
+        class="container laptop:max-w-screen-desktop phone:max-w-none flex laptop:flex-nowrap phone:flex-wrap justify-between pb-[40px]"
+      >
+        <div class="flex w-[100%] laptop:flex-nowrap phone:flex-wrap">
           <img
             src="./assets/svg/logo.svg"
             class="w-[192px] h-[64px]"
@@ -578,8 +722,10 @@
         </div>
 
         <div class="flex flex-col items-end pt-[20px] pr-[50px] w-[100%]">
-          <div class="w-[100%] flex flex-col items-end justify-stretch">
-            <nav>
+          <div
+            class="w-[100%] flex flex-col laptop:pl-[0px] phone:pl-[50px] items-end justify-stretch"
+          >
+            <nav class="laptop:flex phone:hidden">
               <ul class="flex gap-[40px] font-medium">
                 <li class="hover:cursor-pointer text-black">
                   <a class="hover:text-secondary/[0.8] text-black" href="#home"
@@ -611,7 +757,7 @@
             </nav>
             <a
               href="#contacts"
-              class="button hover:text-primary font-bold text-center w-[100%] max-w-[412px] text-base mt-[40px]"
+              class="button hover:text-primary font-bold text-center w-[100%] max-w-[412px] text-base laptop:mt-[40px] phone:mt-[10px]"
             >
               Зробити замовлення
             </a>

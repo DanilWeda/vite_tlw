@@ -5,6 +5,12 @@ export default {
     container: {
       center: true,
     },
+    screens: {
+      phone: "320px",
+      tablet: "768px",
+      laptop: "1024px",
+      desktop: "1280px",
+    },
     fontSize: {
       sm: ["14px", "20px"],
       base: ["16px", "24px"],
@@ -28,5 +34,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  // eslint-disable-next-line no-undef
+  plugins: [require("tailwind-hamburgers")],
 };
+
