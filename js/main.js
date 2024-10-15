@@ -43,3 +43,16 @@ tham.addEventListener("click", () => {
 
   lockOverflow();
 });
+
+const nav = document.querySelector("#navigation");
+const navTop = nav.offsetTop;
+
+function stickyNavigation() {
+  if (window.scrollY >= navTop) {
+    nav.classList.add("fixed");
+  } else {
+    nav.classList.remove("fixed");
+  }
+}
+
+window.addEventListener("scroll", stickyNavigation);
