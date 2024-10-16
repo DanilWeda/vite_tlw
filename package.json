@@ -25,6 +25,9 @@
     "**/*.js": [
       "eslint . --fix",
       "prettier --write --ignore-unknown"
+    ],
+    "*.{css,html,json}": [
+      "prettier --write --ignore-unknown"
     ]
   },
   "dependencies": {
