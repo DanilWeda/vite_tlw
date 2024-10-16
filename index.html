@@ -677,12 +677,18 @@
             </div>
           </div>
 
-          <form class="max-w-[550px] w-[100%]">
+          <form
+            name="contact-form"
+            method="post"
+            action="https://script.google.com/macros/s/AKfycbyjka6es6zgMkWgqFrvUa6uxI7OFppj4t32q2bgLRXuKOzHU0-K_d-O_dYD_ZDvxej9sA/exec"
+            class="max-w-[550px] w-[100%]"
+          >
             <div class="flex flex-col gap-[25px]">
               <div class="flex flex-col">
                 <label class="text-black mb-[20px]">Імʼя та прізвище</label>
                 <input
                   class="outline-none text-black bg-white border-[1px] rounded-[10px] p-[20px] border-neutral"
+                  name="user-name"
                   placeholder="Імʼя та прізвище"
                 />
               </div>
@@ -690,8 +696,11 @@
               <div class="flex flex-col">
                 <label class="text-black mb-[20px]">Номер телефону</label>
                 <input
+                  type="text"
+                  name="user-phone"
                   class="outline-none text-black bg-white border-[1px] rounded-[10px] p-[20px] border-neutral"
-                  placeholder="+380 (000) 000 00 00"
+                  placeholder="(063) 610 09 13"
+                  maxlength="10"
                 />
               </div>
 
@@ -699,6 +708,7 @@
                 <label class="text-black mb-[20px]">Примітки</label>
                 <textarea
                   class="outline-none text-black bg-white border-[1px] resize-none rounded-[10px] p-[20px] border-neutral"
+                  name="user-message"
                 ></textarea>
               </div>
 
