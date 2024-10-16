@@ -58,15 +58,31 @@ function stickyNavigation() {
 window.addEventListener("scroll", stickyNavigation);
 
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbwxrr9gY3hHl86SuG0uv8nQa0NJHnmqFYqzCzrqM0w4wWDuE-B--j9r9iwch5FHZK6o/exec";
+  "https://script.google.com/macros/s/AKfycbyjka6es6zgMkWgqFrvUa6uxI7OFppj4t32q2bgLRXuKOzHU0-K_d-O_dYD_ZDvxej9sA/exec";
 
 const form = document.forms["contact-form"];
+const inputNumber = document.querySelector("#user-phone");
+
+const numberInputState = {
+  numberValue: "",
+};
+
+inputNumber.addEventListener("input", (e) => {
+  numberInputState.numberValue = e.target.value
+    .replace(/[^0-9.]/g, "")
+    .replace(/(\..*?)\..*/g, "$1");
+  inputNumber.value = numberInputState.numberValue;
+});
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then(() => alert("Thank you! your form is submitted successfully."))
+  fetch(scriptURL, {
+    mode: "no-cors",
+    method: "POST",
+    body: new FormData(form),
+  })
+    .then(() => {})
     .then(() => window.location.reload())
     .catch((error) => console.error("Error!", error.message));
 });
