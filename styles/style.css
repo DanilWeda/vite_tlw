@@ -83,7 +83,7 @@ button {
     color: #213547;
     background-color: #ffffff;
   }
-  
+
   button {
     background-color: #f9f9f9;
   }
@@ -96,6 +96,9 @@ button {
 
 .button {
   @apply py-4 px-4 rounded-[5px] bg-secondary text-white uppercase;
+}
+.success-sended {
+  background-color: #aa894d;
 }
 
 .swiper {

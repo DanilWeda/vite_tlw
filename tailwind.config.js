@@ -31,10 +31,10 @@ export default {
         "light-black": "#2D2D2D",
         green: "#AA894D",
         "event-hover": "#C59F4F",
+        warning: "red",
       },
     },
   },
   // eslint-disable-next-line no-undef
   plugins: [require("tailwind-hamburgers")],
 };
-
