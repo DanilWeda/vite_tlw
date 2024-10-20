@@ -1,12 +1,16 @@
 import Swiper from "swiper";
 import "swiper/css";
+import { Autoplay } from "swiper/modules";
 
 const MAX_NUMBER_LENGTH = 10;
 
 new Swiper(".js-works-slider", {
   spaceBetween: 15,
+  autoplay: true,
+  speed: 1000,
   centeredSlides: true,
   loop: true,
+  modules: [Autoplay],
   breakpoints: {
     320: {
       slidesPerView: 2,
