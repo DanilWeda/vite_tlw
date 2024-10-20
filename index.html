@@ -10,14 +10,19 @@
   </head>
   <body>
     <div
-      class="js-burger-menu fixed z-10 flex hidden h-[100dvh] w-[100dvw] flex-col justify-around bg-white pb-[40px] pt-[40px]"
+      class="js-burger-menu fixed z-20 flex hidden h-[100dvh] w-[100dvw] flex-col justify-around bg-white"
     >
-      <div class="flex items-center gap-[10px]">
+      <div class="flex items-center justify-between gap-[10px]">
         <img
           src="./assets/svg/logo.svg"
           class="h-[64px] w-[192px]"
           alt="logo"
         />
+        <div class="tham tham-e-squeeze tham-w-6 mr-[25px] laptop:hidden">
+          <div class="tham-box">
+            <div class="tham-inner"></div>
+          </div>
+        </div>
       </div>
 
       <nav class="mt-[80px] flex w-[100%] justify-center">
@@ -40,11 +45,6 @@
           <li class="text-black hover:cursor-pointer">
             <a class="text-black hover:text-secondary/[0.8]" href="#about-us"
               >Про нас</a
-            >
-          </li>
-          <li class="text-black hover:cursor-pointer">
-            <a class="text-black hover:text-secondary/[0.8]" href="#contacts"
-              >Контакти</a
             >
           </li>
         </ul>
@@ -132,7 +132,7 @@
       id="app"
       class="h-[100vh] w-[100%] !max-w-none bg-cover bg-no-repeat p-[0px] phone:bg-[url('/assets/bg/hero-section-phone.jpg')] laptop:bg-[url('/assets/bg/hero-section.jpg')]"
     >
-      <header id="navigation" class="w-[100%] bg-white phone:z-10">
+      <header id="navigation" class="w-[100%] bg-white phone:z-10 laptop:z-0">
         <div
           class="container flex items-center justify-between py-[20px] phone:max-w-full laptop:max-w-screen-desktop"
         >

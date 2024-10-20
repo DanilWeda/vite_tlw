@@ -21,7 +21,7 @@ new Swiper(".js-works-slider", {
   },
 });
 
-const tham = document.querySelector(".tham");
+const thams = document.querySelectorAll(".tham");
 const menu = document.querySelector(".js-burger-menu");
 const links = menu.querySelectorAll("a");
 
@@ -30,25 +30,27 @@ const lockOverflow = () => (document.body.style.overflow = "hidden");
 const unlockOverflow = () => (document.body.style.overflow = "auto");
 
 const closeMobileMenu = () => {
-  tham.classList.remove("tham-active");
+  thams.forEach((tham) => tham.classList.remove("tham-active"));
   menu.classList.add("hidden");
   unlockOverflow();
 };
 
 const toggleMenu = () => {
   menu.classList.toggle("hidden");
-  tham.classList.toggle("tham-active");
+  thams.forEach((tham) => tham.classList.toggle("tham-active"));
 };
 
 links.forEach((link) => link.addEventListener("click", closeMobileMenu));
 
-tham.addEventListener("click", () => {
-  toggleMenu();
+thams.forEach((tham) =>
+  tham.addEventListener("click", () => {
+    toggleMenu();
 
-  if (menu.classList.contains("hidden")) return unlockOverflow();
+    if (menu.classList.contains("hidden")) return unlockOverflow();
 
-  lockOverflow();
-});
+    lockOverflow();
+  }),
+);
 
 const nav = document.querySelector("#navigation");
 const navTop = nav.offsetTop;
